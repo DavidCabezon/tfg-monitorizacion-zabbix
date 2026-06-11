@@ -13,19 +13,3 @@ El archivo `docker-compose.yml` orquesta cinco servicios interconectados en una 
 3. **zabbix-web (`zabbix-frontend`):** Interfaz gráfica de usuario basada en Nginx y PHP, publicada en el puerto `8080`.
 4. **grafana (`grafana`):** Plataforma avanzada de analítica y visualización, con preinstalación automatizada del plugin de Zabbix y mapeo de volumen local para mantener la persistencia de los *dashboards*.
 5. **zabbix-agent (`zabbix-agent-central`):** Agente de monitorización local configurado en modo `host` y modo `root` para la supervisión directa del nodo anfitrión.
-
-## 🚀 Requisitos Previos
-
-Antes de proceder al despliegue, asegúrese de contar con los siguientes elementos en el sistema anfitrión (Ubuntu Server 24.04 LTS o similar):
-
-- Motor de Docker instalado (`docker-ce`)
-- Complemento de Docker Compose v2 configurado (`docker-compose-plugin`)
-- El volcado de la base de datos previa nombrado exactamente como `copia_completa_zabbix.sql` en la raíz del directorio.
-- El directorio persistente `copia_grafana` ubicado en la raíz del directorio.
-
-## 🔧 Instrucciones de Despliegue
-
-1. Clone este repositorio en la máquina servidora:
-   ```bash
-   git clone [https://github.com/DavidCabezon/tfg-monitorizacion-zabbix.git](https://github.com/DavidCabezon/tfg-monitorizacion-zabbix.git)
-   cd tfg-monitorizacion-zabbix
