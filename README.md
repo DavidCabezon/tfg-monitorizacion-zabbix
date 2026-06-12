@@ -4,7 +4,7 @@ Este repositorio contiene la configuración completa para el despliegue automati
 
 El diseño está orientado a entornos de producción, implementando estrategias de persistencia de datos, aislamiento de red (*Bridge*) y automatización de respuesta ante incidentes (auto-sanación), además de mecanismos de recuperación ante desastres (*Disaster Recovery*) mediante la inyección automática de respaldos.
 
-## 🛠️ Arquitectura de Servicios
+## Arquitectura de Servicios
 
 El archivo `docker-compose.yml` orquesta cinco servicios interconectados en una red aislada denominada `zabbix-net`:
 
