@@ -1,8 +1,8 @@
 # Sistema de Monitorización e Infraestructura como Código (IaC)
 
-Este repositorio contiene la configuración completa para el despliegue automatizado de una infraestructura core de monitorización basada en **Zabbix 7.0 LTS**, **MariaDB** y **Grafana**, totalmente contenedorizada mediante **Docker Compose**. 
+Este repositorio contiene la configuración completa para el despliegue automatizado de una infraestructura de monitorización basada en **Zabbix 7.0 LTS**, **MariaDB** y **Grafana**, totalmente contenedorizada mediante **Docker Compose**. 
 
-El diseño está orientado a entornos de producción, implementando estrategias de persistencia de datos, aislamiento de red (*Bridge*) y automatización de respuesta ante incidentes (auto-sanación), además de mecanismos de recuperación ante desastres (*Disaster Recovery*) mediante la inyección automática de respaldos.
+El diseño está orientado a entornos de producción, implementando estrategias de persistencia de datos, aislamiento de red y automatización de respuesta ante incidentes, además de mecanismos de recuperación ante desastres mediante la inyección automática de respaldos.
 
 ## Arquitectura de Servicios
 
